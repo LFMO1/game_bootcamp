@@ -1,0 +1,41 @@
+.bory{
+    background: #fafafa;
+}
+
+.dino{  /* . identifica uma classe*/
+    width: 60px;
+    height: 60px;
+    position: absolute;  /* fica aonde voce difine*/
+    bottom: 0;
+    background-image: url(dino.png);
+
+}
+
+.cactus{
+    position: absolute;
+    width: 60px;
+    bottom: 0;
+    height: 60px;
+    background-image: url(cactus.png);
+}
+
+.game-over{
+    text-align: center;
+    color: #666666;
+    margin-top: 50px;
+    font-family: Arial;
+}
+
+@keyframes play{
+    from {background-position: 7000% ;}
+    to {background-position: 0}
+}
+
+.fundo{
+position: absolute;
+bottom: 0;
+background-image: url(background.png);
+animation: play 600s infinite linear ; /* infiniete linear faz fica só no eixo X*/
+width: 100%;
+height: 200%;
+}
